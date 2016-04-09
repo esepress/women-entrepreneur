@@ -1,12 +1,12 @@
 .subscribe-box{
 	form input{
 		font-family: $font-family-secondary;
-		padding: 10px 10px;
+		padding: 12px 10px;
 		border-radius: 2px;
 		border: none;
 		margin-bottom: 15px;
 		width: 100%;
-		text-transform: capitalize;
+		height: 100%;
 	}
 	p{
 		margin-bottom: 0;
@@ -38,6 +38,7 @@
 		input,textarea{
 			display: block;
 			width:100%;
+			height: 100%;
 			border: none;
 			margin-bottom: 30px;
 			padding: 15px;
