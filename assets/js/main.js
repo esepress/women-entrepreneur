@@ -16,7 +16,7 @@ $(function(){
 })
 
 
-*------------------------------------------
+/*------------------------------------------
  Subscribe form ajax
  ------------------------------------------*/
 
@@ -31,6 +31,7 @@ $('#subscription-form').submit(function(e) {
 
     $.ajax({
         type: 'POST',
+        url: 'assets/php/subscribe.php',
         dataType: 'json',
         data: {
             email: email
@@ -45,6 +46,7 @@ $('#subscription-form').submit(function(e) {
                 $form.fadeOut(500);
             } else {
                 ajaxResponse.html(result.message);
+                submit.val("Learn How");
             }
         }
     });

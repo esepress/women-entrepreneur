@@ -73,7 +73,7 @@
 			</div>
 			</div>
 			<div class="col-md-6 col-md-offset-1">
-				<form action="php/contact-form.php" class="contact-form" id="contactForm" method="post" name="contactform" role="form">
+				<form action="assets/php/contact-form.php" class="contact-form" id="contactForm" method="post" name="contactform" role="form">
 
 					<div class="form-group">
 						<input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
@@ -113,11 +113,20 @@
 							</div>
 
 							<div class="col-md-6">
-								<form>
-									<input type="text" name="name" placeholder="first name" />
-									<input type="email" name="email" placeholder="e-mail address" />
-									<input class="cta-button" type="submit" name="submit" value="Learn How" />
+								<form class="subscribe-form" id="subscription-form" role="form">
+									<div class="form-group">
+										<input type="text" name="name" id="subscriber-name" class="form-control" placeholder="first name" required>
+									</div>
+
+									<div class="form-group">
+										<input type="email" name="email" id="subscriber-email" class="form-control" placeholder="e-mail address" required>
+									</div>
+
+									<input id="subscribe-button" class="cta-button" type="submit" value="Learn How">
 								</form>
+
+				                <!-- SUCCESS OR ERROR MESSAGES -->
+				                <div id="subscription-response"></div>
 							</div>
 						</div>
 				</div>
@@ -151,5 +160,6 @@
 
  	<script type="text/javascript" src="assets/js/app.js"></script>
  	<script type="text/javascript" src="assets/js/contact.js"></script>
+ 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
