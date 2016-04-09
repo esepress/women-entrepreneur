@@ -383,6 +383,7 @@ blockquote {
   padding: 30px; }
   .contact-body form input, .contact-body form textarea {
     display: block;
+    height: 100%;
     width: 100%;
     border: none;
     margin-bottom: 30px;

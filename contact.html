@@ -73,11 +73,21 @@
 			</div>
 			</div>
 			<div class="col-md-6 col-md-offset-1">
-				<form>
-					<input type="text" name="name" placeholder="your name" />
-					<input type="email" name="email" placeholder="your email" />
-					<textarea name="message" placeholder="your message"></textarea>
-					<input type="submit" name="submit" value="Get In Touch" class="cta-button" />
+				<form action="php/contact-form.php" class="contact-form" id="contactForm" method="post" name="contactform" role="form">
+
+					<div class="form-group">
+						<input class="form-control" id="name" name="name" placeholder="Your Name" type="text" required>
+					</div>
+
+					<div class="form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email Address" type="email" required>
+                    </div>
+
+                    <div class="form-group">
+                    </div>
+
+                    <div id="contactFormResponse"></div>
+
 				</form>
 			</div>
 		</div>
@@ -130,7 +140,7 @@
 			<ul class="text-center terms">
 				<li><a href="#">privacy policy</a></li>
 				<li><a href="#">desclaimer</a></li>
-				<li><a href="#">terms & conditions</a></li>
+				<li><a href="#">terms &amp; conditions</a></li>
 				<li><a href="#">© 2016 MARIE FORLEO INTERNATIONAL</li>
 			</ul>
 		</div>
@@ -138,5 +148,6 @@
 </footer>
 
  	<script type="text/javascript" src="assets/js/app.js"></script>
+ 	<script type="text/javascript" src="assets/js/contact.js"></script>
 </body>
 </html>
