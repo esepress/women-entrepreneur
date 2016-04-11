@@ -75,11 +75,20 @@
 							</div>
 
 							<div class="col-md-6">
-								<form>
-									<input type="text" name="name" placeholder="first name" />
-									<input type="email" name="email" placeholder="e-mail address" />
-									<input class="cta-button" type="submit" name="submit" value="Learn How" />
+								<form class="subscribe-form" role="form">
+									<div class="form-group">
+										<input type="text" name="name" class="form-control" placeholder="first name" required>
+									</div>
+
+									<div class="form-group">
+										<input type="email" name="email" class="form-control subscriber-email" placeholder="e-mail address" required>
+									</div>
+
+									<input class="cta-button subscribe-button" type="submit" value="Learn How">
 								</form>
+
+				                <!-- SUCCESS OR ERROR MESSAGES -->
+				                <div class="subscription-response"></div>
 							</div>
 						</div>
 				</div>
@@ -320,11 +329,20 @@
 							</div>
 
 							<div class="col-md-6">
-								<form>
-									<input type="text" name="name" placeholder="first name" />
-									<input type="email" name="email" placeholder="e-mail address" />
-									<input class="cta-button" type="submit" name="submit" value="Learn How" />
+								<form class="subscribe-form" id="subscription-form" role="form">
+									<div class="form-group">
+										<input type="text" name="name" id="subscriber-name" class="form-control" placeholder="first name" required>
+									</div>
+
+									<div class="form-group">
+										<input type="email" name="email" id="subscriber-email" class="form-control" placeholder="e-mail address" required>
+									</div>
+
+									<input id="subscribe-button" class="cta-button" type="submit" value="Learn How">
 								</form>
+
+				                <!-- SUCCESS OR ERROR MESSAGES -->
+				                <div id="subscription-response"></div>
 							</div>
 						</div>
 				</div>
@@ -349,13 +367,14 @@
 			<ul class="text-center terms">
 				<li><a href="#">privacy policy</a></li>
 				<li><a href="#">desclaimer</a></li>
-				<li><a href="#">terms & conditions</a></li>
-				<li><a href="#">© 2016 MARIE FORLEO INTERNATIONAL</li>
+				<li><a href="#">terms &amp; conditions</a></li>
+				<li><a href="#">&copy; 2016 WOMEN ENTREPRENEUR. Theme By <a href="https://themewagon.com/" style="color: #E952B9;">ThemeWagon</a></li>
 			</ul>
 		</div>
 	</div>
 </footer>
 
  	<script type="text/javascript" src="assets/js/app.js"></script>
+ 	<script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>
